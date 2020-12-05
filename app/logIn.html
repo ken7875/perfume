@@ -1,0 +1,31 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+subscribe: false
+current: index
+---
+
+<div class="container">
+    <div class="logIn row mb-md-11 position-relative">
+        <div class="col-12 col-md-8 mb-6">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/login1.jpg?raw=true" alt="pic">
+        </div>
+        <div class="col-12 form col-md-4">
+            <h2 class="mb-2 mb-md-4">Log In</h2>
+            <form class="mb-7">
+                <label for="account" id="account" class="w-100">帳號</label>
+                <input type="email" name="account" id="account" placeholder="email@example.com" class="px-2 py-1 mb-4 w-100">
+                <label for="password" id="password" class="w-100">密碼</label>
+                <input type="num" name="password" id="password"placeholder="Password" class="px-2 py-1 w-100">
+            </form>
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#">忘記密碼</a>
+                <div class="button-group">
+                    <button class="btn btn-outline-primary px-3 py-2" type="button">註冊</button>
+                    <button class="logInBtn btn btn-primary px-3 py-2" type="submit">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
