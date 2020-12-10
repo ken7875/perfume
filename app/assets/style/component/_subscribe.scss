@@ -1,4 +1,4 @@
-.submit{
+.subscribe{
     position: relative;
     height: 600px;
     background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true');
@@ -6,11 +6,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     .content{
+        width: 30%;
         position: absolute;
         bottom: 20%;
         left: 20%;
         input{
-            border:2px solid $primary;     
+            border:2px solid $primary; 
         }
         button{
             border-radius: 10px;

@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
-  <link rel="stylesheet" href="./assets/style/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
   rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">  
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid container-md">
     <header class="header d-flex justify-content-between py-3 align-items-center">
       <h1>
         <a href="index.html">D'Perfume</a>
@@ -69,55 +69,24 @@
         </li>
       </ul>
     </header>
-    <div class="collapse d-lg-none font-lg" id="collapseNavbar">
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingOne">
-          <p class="mb-0 text-center">
-            <a href="products.html" class="text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Product
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingTwo">
-          <p class="mb-0 text-center">
-            <a href="#" class="text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Wishlist
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingThree">
-          <p class="mb-0 text-center">
-            <a href="#" class="text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Blog
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingThree">
-          <p class="mb-0 text-center">
-            <a href="#" class="text-white" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Contact
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingThree">
-          <p class="mb-0 text-center">
-            <a href="#" class="text-white" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              log in
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
   </div>
-    
+  <div class="collapse navbar-collapse d-md-none font-lg" id="collapseNavbar">
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" href="products.html">Product</a>
+    </nav>
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" href="products.html">Wishlist</a>
+    </nav>
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" w-100 text-center href="products.html">Blog</a>
+    </nav>
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" href="products.html">Contact</a>
+    </nav>
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" href="products.html">log in</a>
+    </nav>
+  </div>
   <%- contents %>
     
   
@@ -127,7 +96,7 @@
   <footer class="footer container-fluid bg-primary py-3 px-lg-5">
     <div class="footer-inner d-flex align-items-center">
       <h2 class="footerLogo mr-lg-5"><a href="#">D'Perfume</a></h2>
-      <p class="mb-0 text-white">© 2020. All Rights Reserved.</p>
+      <h5 class="mb-0 text-white">© 2020. All Rights Reserved.</h5>
         <ul class="d-none d-lg-flex mb-0 ml-auto">
           <li class="mr-5">
             <a href="#" class="text-white">
@@ -147,8 +116,6 @@
         </ul>
     </div>
   </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -157,6 +124,8 @@
   <script>
   AOS.init();
   </script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>  
 </body>
 
 </html>
