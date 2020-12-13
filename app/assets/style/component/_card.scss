@@ -6,6 +6,9 @@
     }
     h4{
         white-space: nowrap;
+        @include pad(){
+            white-space: normal;       
+        }
     }
     .pic2{
         object-position: 0 -120px;
@@ -24,5 +27,8 @@
 .recommendProduct .card{
     img{
         height: 550px;
+        @include pad(){
+            height: 450px;
+        }
     }
 }
