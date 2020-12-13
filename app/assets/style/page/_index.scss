@@ -26,15 +26,17 @@
     .training{
         height: auto;
     }
+    .introduceImg{
+        width: 50%;
+        @include mobile(){
+            width: 100%;
+        }
+    }
     .N5{
-        object-position: 0px 0;
+        background-position: 0 0;
     }
     img{
         width: 50%;
-        height: 500px;
-        @include pad(){
-            height: 350px;
-        }
         @include mobile(){
             width: 100%;
         }

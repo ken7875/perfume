@@ -50,6 +50,15 @@ img{
     height: auto;
 }
 
+.img{
+    background-size: cover;
+    background-position: center center;
+}
+
+.square_img{
+    padding-top: 100%;
+}
+
 .active{
     color: $primary;
     border-bottom: 2px solid $primary;
