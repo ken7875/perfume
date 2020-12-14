@@ -10031,6 +10031,9 @@ html, body {
   margin: 0;
   padding: 0; }
 
+body {
+  overflow-x: hidden; }
+
 .icon a {
   text-decoration: none; }
 
@@ -10059,6 +10062,13 @@ img {
   max-width: 100%;
   height: auto; }
 
+.img {
+  background-size: cover;
+  background-position: center center; }
+
+.square_img {
+  padding-top: 100%; }
+
 .active {
   color: #916000;
   border-bottom: 2px solid #916000; }
@@ -10073,31 +10083,35 @@ input {
   color: #CDCDCD;
   text-decoration: line-through; }
 
-.submit {
+a {
+  display: block; }
+
+.subscribe {
   position: relative;
   height: 600px;
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
-  .submit .content {
+  .subscribe .content {
+    width: 30%;
     position: absolute;
     bottom: 20%;
     left: 20%; }
-    .submit .content input {
+    .subscribe .content input {
       border: 2px solid #916000; }
-    .submit .content button {
+    .subscribe .content button {
       border-radius: 10px; }
-  @media (max-width: 414px) {
-    .submit .content {
+  @media (max-width: 767px) {
+    .subscribe .content {
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
-      .submit .content h2 {
+      .subscribe .content h2 {
         text-align: center; }
-    .submit .input-group {
+    .subscribe .input-group {
       width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -10128,20 +10142,33 @@ input {
   height: 255px;
   width: 100%; }
 
-.form {
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-          transform: translateY(50%); }
-  @media (max-width: 414px) {
-    .form {
-      position: static;
-      -webkit-transform: translateY(0);
-          -ms-transform: translateY(0);
-              transform: translateY(0);
-      margin-bottom: 113px; } }
+.card h4 {
+  white-space: nowrap; }
+  @media (max-width: 992px) {
+    .card h4 {
+      white-space: normal; } }
+
+.card .pic2 {
+  -o-object-position: 50% 90%;
+     object-position: 50% 90%; }
+
+.card .pic3 {
+  -o-object-position: 0 -35px;
+     object-position: 0 -35px; }
+
+.card .pic4 {
+  -o-object-position: 0 -15px;
+     object-position: 0 -15px; }
+
+.card .pic5 {
+  -o-object-position: 0 0;
+     object-position: 0 0; }
+
+.recommendProduct .card img {
+  height: 550px; }
+  @media (max-width: 992px) {
+    .recommendProduct .card img {
+      height: 450px; } }
 
 header {
   height: 90px; }
@@ -10155,7 +10182,7 @@ header {
     overflow: hidden;
     white-space: nowrap;
     background-repeat: no-repeat; }
-  header .accordion {
+  header .collapse {
     z-index: 1000; }
   header .badge {
     -webkit-transform: translate(-30px, -10px);
@@ -10184,49 +10211,46 @@ footer {
 .banner {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true");
   background-size: cover;
-  width: 100%;
   height: 870px; }
-  @media (max-width: 414px) {
+  @media (max-width: 767px) {
     .banner {
       height: 480px; } }
   .banner .content {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    bottom: 50%;
-    width: 30%;
     color: #f8f9fa; }
     .banner .content .btn {
       font-size: 20px;
       border: 2px solid;
       border-radius: 30px; }
-    @media (max-width: 414px) {
+    @media (max-width: 992px) {
+      .banner .content {
+        width: 65%; } }
+    @media (max-width: 767px) {
       .banner .content {
         padding-left: 20px;
         padding-right: 20px;
-        width: 100%;
-        top: 50%;
-        bottom: 50%;
-        background-position: center center; } }
+        width: 100%; } }
+
+.introduce .training {
+  height: auto; }
+
+.introduce .introduceImg {
+  width: 50%; }
+  @media (max-width: 767px) {
+    .introduce .introduceImg {
+      width: 100%; } }
+
+.introduce .N5 {
+  background-position: 0 0; }
 
 .introduce img {
-  width: 50%;
-  height: 450px; }
-  @media (max-width: 414px) {
+  width: 50%; }
+  @media (max-width: 767px) {
     .introduce img {
-      width: 100%;
-      height: 350px; } }
+      width: 100%; } }
 
-.recommendProduct a {
-  width: 33.33%;
-  color: #000000; }
-  .recommendProduct a img {
-    height: 540px; }
-
-@media (max-width: 414px) {
-  .recommendProduct a {
-    width: 100%;
-    margin-bottom: 30px; } }
+@media (max-width: 992px) {
+  .introduce .training {
+    height: 680px; } }
 
 .content {
   width: 35%;
@@ -10243,18 +10267,18 @@ footer {
           justify-content: center; }
   .content button {
     border-radius: 30px; }
-  @media (max-width: 414px) {
+  @media (max-width: 767px) {
     .content {
       width: 100%;
       margin-bottom: 30px; } }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .recycle img {
     -o-object-fit: cover;
        object-fit: cover;
     margin-bottom: 15px; } }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .account {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

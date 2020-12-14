@@ -6,18 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>產品頁面</title>
-  <link rel="stylesheet" href="./assets/style/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
   rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">  
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid container-md">
     <header class="header d-flex justify-content-between py-3 align-items-center">
       <h1>
         <a href="index.html">D'Perfume</a>
       </h1>
-      <ul class="d-md-flex d-none">
+      <ul class="d-md-flex d-none mt-2">
         <li class="mr-5">
           <a href="products.html" class="text-secondary">
             <span class="material-icons">
@@ -51,9 +52,9 @@
           </a>
         </li>
       </ul>
-      <ul class="d-flex d-lg-none align-items-center">
+      <ul class="d-flex d-md-none align-items-center">
         <li>
-          <a href="#">
+          <a href="detail.html">
             <span class="material-icons mr-3 text-secondary">
               shopping_cart
             </span>
@@ -69,55 +70,24 @@
         </li>
       </ul>
     </header>
-    <div class="collapse d-lg-none font-lg" id="collapseNavbar">
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingOne">
-          <p class="mb-0 text-center">
-            <a href="products.html" class="text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Product
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingTwo">
-          <p class="mb-0 text-center">
-            <a href="#" class="text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Wishlist
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingThree">
-          <p class="mb-0 text-center">
-            <a href="#" class="text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Blog
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingThree">
-          <p class="mb-0 text-center">
-            <a href="#" class="text-white" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Contact
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header bg-secondary" id="headingThree">
-          <p class="mb-0 text-center">
-            <a href="#" class="text-white" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              log in
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
   </div>
-    
+  <div class="collapse navbar-collapse d-md-none font-lg" id="collapseNavbar">
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" href="products.html">Product</a>
+    </nav>
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" href="products.html">Wishlist</a>
+    </nav>
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" w-100 text-center href="products.html">Blog</a>
+    </nav>
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" href="products.html">Contact</a>
+    </nav>
+    <nav class="navbar navbar-light bg-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="nav-link text-white w-100 text-center" href="products.html">log in</a>
+    </nav>
+  </div>
   
 <div class="navbar bg-primary py-3 mb-5 d-none d-md-none">
     <div class="container">
@@ -133,7 +103,7 @@
 </div>
 <div class="products container mb-7">
     <ul class="row pl-0">
-        <li class="col-md-3 col-6 mb-5">
+        <li class="col-lg-3 col-md-4 col-6 mb-5">
           <div class="card border-0">
             <a href="#"><img src="./assets/images/products1.jpg" alt="product"></a>
             <div class="card-body p-0">
@@ -142,7 +112,7 @@
                 <p><span class="mr-2">NT$1,380</span>
                     <span class="origin_price">NT$1,580</span>
                 </p>
-                <div class="icon">
+                <div class="icon d-flex">
                     <a href="#" class="mr-2">
                         <span class="material-icons">
                             favorite
@@ -157,9 +127,9 @@
             </div>
           </div>
         </li>
-        <li class="col-md-3 col-6 mb-5">
+        <li class="col-lg-3 col-md-4 col-6 mb-5">
             <div class="card border-0">
-                <a href="#"><img src="./assets/images/P&B.jpg" alt="product" ></a>
+                <a href="#"><img src="./assets/images/P&B.jpg" alt="product" class="pic2"></a>
                 <div class="card-body p-0">
                     <h5 class="card-title">Poppy & Barley</h5>
                     <p class="card-text">Jo Malone</p>
@@ -167,7 +137,7 @@
                         <span class="mr-2">NT$1,380</span>
                         <span class="origin_price">NT$1,580</span>
                     </p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -182,16 +152,16 @@
                 </div>
           </div>
         </li>
-        <li class="col-md-3 col-6 mb-5">
+        <li class="col-lg-3 col-md-4 col-6 mb-5">
             <div class="card border-0">
-                <a href="#"><img src="./assets/images/products3.jpg" alt="product"></a>
+                <a href="#"><img src="./assets/images/products3.jpg" alt="product" class="pic3"></a>
                 <div class="card-body p-0">
-                    <h5 class="card-title">Poppy & Barley</h5>
-                    <p class="card-text">Jo Malone</p>
+                    <h5 class="card-title">L'EAU</h5>
+                    <p class="card-text">LAURISSI</p>
                     <p>
-                        <span class="mr-2">NT$1,380</span>
+                        <span class="mr-2">NT$1,580</span>
                     </p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -206,16 +176,16 @@
                 </div>
           </div>
         </li>
-        <li class="col-md-3 col-6 mb-5">
+        <li class="col-lg-3 col-md-4 col-6 mb-5">
             <div class="card border-0">
-                <a href="#"><img src="./assets/images/products4.jpg" alt="product"></a>
+                <a href="#"><img src="./assets/images/products4.jpg" alt="product" class="pic4"></a>
                 <div class="card-body p-0">
-                    <h5 class="card-title">Poppy & Barley</h5>
-                    <p class="card-text">Jo Malone</p>
+                    <h5 class="card-title">L'INTERDIT</h5>
+                    <p class="card-text">GIVENCY</p>
                     <p>
-                        <span class="mr-2">NT$1,380</span>
+                        <span class="mr-2">NT$1,280</span>
                     </p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -230,17 +200,17 @@
                 </div>
           </div>
         </li>
-        <li class="col-md-3 col-6 mb-5">
+        <li class="col-lg-3 col-md-4 col-6 mb-5">
             <div class="card border-0">
                 <a href="#"><img src="./assets/images/products5.jpg" alt="product"></a>
                 <div class="card-body p-0">
-                    <h5 class="card-title">Poppy & Barley</h5>
-                    <p class="card-text">Jo Malone</p>
+                    <h5 class="card-title">Seoul</h5>
+                    <p class="card-text">ZARA</p>
                     <p>
                         <span class="mr-2">NT$1,380</span>
                         <span class="origin_price">NT$1,580</span>
                     </p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -255,17 +225,17 @@
                 </div>
           </div>
         </li>
-        <li class="col-md-3 col-6 mb-5">
+        <li class="col-lg-3 col-md-4 col-6 mb-5">
             <div class="card border-0">
-                <a href="#"><img src="./assets/images/N5.jpg" alt="product"></a>
+                <a href="#"><img src="./assets/images/N5.jpg" alt="product" class="pic5"></a>
                 <div class="card-body p-0">
-                    <h5 class="card-title">Poppy & Barley</h5>
-                    <p class="card-text">Jo Malone</p>
+                    <h5 class="card-title">N5</h5>
+                    <p class="card-text">CHANEL</p>
                     <p>
                         <span class="mr-2">NT$1,380</span>
                         <span class="origin_price">NT$1,580</span>
                     </p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -280,14 +250,14 @@
             </div>
           </div>
         </li>
-        <li class="col-md-3 col-6 mb-5">
+        <li class="col-lg-3 col-md-4 col-6 mb-5">
             <div class="card border-0">
                 <a href="#"><img src="./assets/images/products7.jpg" alt="product"></a>
                 <div class="card-body p-0">
-                    <h5 class="card-title">Poppy & Barley</h5>
-                    <p class="card-text">Jo Malone</p>
-                    <p><span>NT$1,380</span></p>
-                    <div class="icon">
+                    <h5 class="card-title">COCO</h5>
+                    <p class="card-text">CHANEL</p>
+                    <p><span>NT$2,380</span></p>
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -302,14 +272,14 @@
                 </div>
           </div>
         </li>
-        <li class="col-md-3 col-6 mb-5">
+        <li class="col-lg-3 col-md-4 col-6 mb-5">
             <div class="card border-0">
                 <a href="#"><img src="./assets/images/products8.jpg" alt="product"></a>
                 <div class="card-body p-0">
-                    <h5 class="card-title">Poppy & Barley</h5>
-                    <p class="card-text">Jo Malone</p>
+                    <h5 class="card-title">D&G</h5>
+                    <p class="card-text">D&G</p>
                     <p><span>NT$1,380</span></p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -324,7 +294,7 @@
                 </div>
           </div>
         </li>
-        <li class="col-md-3 col-6">
+        <li class="col-lg-3 col-md-4 col-6">
             <div class="card border-0">
                 <a href="#"><img src="./assets/images/five o'clock.jpg" alt="product"></a>
                 <div class="card-body p-0">
@@ -334,7 +304,7 @@
                         <span class="mr-2">NT$1,380</span>
                         <span class="origin_price">NT$1,580</span>
                     </p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -349,7 +319,7 @@
                 </div>
             </div>
         </li>
-        <li class="col-md-3 col-6">
+        <li class="col-lg-3 col-md-4 col-6">
             <div class="card border-0">
                 <a href="#"><img src="./assets/images/products10.jpg" alt="product"></a>
                 <div class="card-body p-0">
@@ -358,7 +328,7 @@
                     <p>
                         <span class="mr-2">NT$1,380</span>
                         <span class="origin_price">NT$1,580</span></p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -373,14 +343,14 @@
                 </div>
           </div>
         </li>
-        <li class="col-md-3 col-6">
+        <li class="col-lg-3 col-md-4 col-6">
             <div class="card border-0">
                 <a href="#"><img src="./assets/images/products11.jpg" alt="product"></a>
                 <div class="card-body p-0">
                     <h5 class="card-title">Poppy & Barley</h5>
                     <p class="card-text">Jo Malone</p>
                     <p><span>NT$1,380</span></p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                         <a href="#" class="mr-2">
                             <span class="material-icons">
                                 favorite
@@ -395,14 +365,14 @@
                 </div>
             </div>
         </li>
-        <li class="col-md-3 col-6">
+        <li class="col-lg-3 col-md-4 col-6">
             <div class="card border-0">
                 <a href="#"><img src="./assets/images/products12.jpg" alt="product"></a>
                 <div class="card-body p-0">
                     <h5 class="card-title">Poppy & Barley</h5>
                     <p class="card-text">Jo Malone</p>
                     <p><span>NT$1,380</span></p>
-                    <div class="icon">
+                    <div class="icon d-flex">
                     <a href="#" class="mr-2">
                         <span class="material-icons">
                             favorite
@@ -427,22 +397,29 @@
     
   
   
-    <div class="submit container-fluid">
-    <div class="content">
-      <h2 class="text-gray">記得<br>訂閱以獲取更多資訊！</h2>
-      <div class="input-group mb-3 row">
-        <input type="text" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2" class="py-2 col-7">
-        <div class="input-group-append">
-        <button class="btn btn-primary" type="button" id="button-addon2">Subscirbe</button>
+    <div class="subscribe container-fluid">
+  <div class="content">
+    <form>
+      <div class="form-group">
+        <label for="subscribe" name="subscribe">
+          <h2 class="text-gray">記得<br>訂閱以獲取更多資訊！</h2>
+        </label>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control p-3 h-100" placeholder="Your email address" aria-label="subscribe" aria-describedby="subscribe" id="subscribe">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="subscribe">Subscirbe</button>
+          </div>
         </div>
       </div>
-    </div>
+    </form>
   </div>
+</div>
+   
   
   <footer class="footer container-fluid bg-primary py-3 px-lg-5">
     <div class="footer-inner d-flex align-items-center">
       <h2 class="footerLogo mr-lg-5"><a href="#">D'Perfume</a></h2>
-      <p class="mb-0 text-white">© 2020. All Rights Reserved.</p>
+      <h5 class="mb-0 text-white">© 2020. All Rights Reserved.</h5>
         <ul class="d-none d-lg-flex mb-0 ml-auto">
           <li class="mr-5">
             <a href="#" class="text-white">
@@ -462,11 +439,15 @@
         </ul>
     </div>
   </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>  
 </body>
 
 </html>
